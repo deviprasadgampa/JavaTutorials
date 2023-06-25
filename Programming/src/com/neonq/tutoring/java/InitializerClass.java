@@ -10,6 +10,9 @@ public class InitializerClass {
         System.out.println(depClass.zipCode);
         System.out.println(depClass.name);
 
+        String returnedStr =  depClass.sendInvite(depClass.name);
+        System.out.println( returnedStr );
+
 
         DependentClass depClass_Prasad = new DependentClass(505, "Prasad");
 
