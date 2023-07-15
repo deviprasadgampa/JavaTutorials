@@ -1,5 +1,10 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
 public class Main {
-    
+
+
     
     public static void main(String[] args) {
         
@@ -7,6 +12,18 @@ public class Main {
         System.out.println("Hello world Ajay!");
         
         arrayOfDataTypes();
+
+
+        List<String> myList = new ArrayList<>();
+        myList.add("Test");
+        myList.add("Example");
+        myList.add("Sth");
+
+        Optional<String> fisrstString = myList.stream().filter(a-> a.equals("Bye")).findFirst();
+
+
+        System.out.println(fisrstString);
+
     }
 
     private static void arrayOfDataTypes() {
